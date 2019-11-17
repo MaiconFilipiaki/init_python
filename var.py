@@ -50,8 +50,23 @@ tipos_convite = ('vip', 'normal', 'meia', 'cortesia') # <- Tuple listas que nao 
 tipos_convite.append('Teste')
 tipos_convite.remove('vip')
 
+#Dicionarios
 convites_com_valor = { 'vip': 60, 'norma': 40, 'meia': 30, 'cortesia': 0 }
 convites_com_valor['vip'] # <- acessar valor
 
 convites_com_valor.keys() # <- retorna somente as keys
 convites_com_valor.values() # <- retorna somente os valores das keys
+
+convite = 'Maicon Douglas'
+parte1 = convite[0:4]
+parte2 = convite[10:14]
+
+print '%s %s' % (parte1, parte2)
+
+convite = 'Maicon Douglas Filipiaki'
+posicao_final = len(convite)
+posicao_inicial = posicao_final - 4
+parte1 = convite[0:4]
+parte2 = convite[posicao_inicial:posicao_final]
+
+print '%s %s' % (parte1, parte2)
