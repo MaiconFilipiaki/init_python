@@ -70,3 +70,33 @@ parte1 = convite[0:4]
 parte2 = convite[posicao_inicial:posicao_final]
 
 print '%s %s' % (parte1, parte2)
+
+
+
+
+# pegar coisas digitadas
+nome = raw_input() # <- vai tratar o terminal e esperar pela entrada, sempre retorna uma string
+ano = raw_input()
+# Para mudar o formato de uma string pra int 
+ano_como_int = int(ano)
+# Converte int para string
+ano_teste = str(ano_como_int)
+
+nomes = []
+nome = raw_input()
+nomes.append(nome)
+
+
+
+#import a biblioteca que faz o controle das Regex
+import re
+
+re.match('Py', 'Python') # primeiro par e oq vai ser procurado, segundo a frase em questao para ver se confere
+resultado = re.match('Py', 'Python')
+resultado.group() # se tiver algo vai retorna
+# senao vai dar um erro de NoneType
+resultado = re.match('[pP]y', 'Python') #digo que a letra pode ser tanto maiúscula como minúscula
+resultado = re.match('[A-Za-z]y', 'Python') # busca palavras que comecam de a - z
+resultados = re.findall('[A-Za-z]y', 'Python pu jython') #pega todas as ocorrencias
+resultados = re.findall('[A-Za-z]y[A-Za-z]+', 'Python pu jython') # retorna a palavra inteira
+resultados = re.findall('\wy\w+', 'Python pu jython') # vai retorna qualquer coisa que tenha letra ou numero
