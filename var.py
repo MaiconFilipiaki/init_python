@@ -43,3 +43,15 @@ convites.append('Vitor')
 convites.append(10)
 convites.remove(10)
 convites.remove('Vitor')
+
+
+tipos_convite = ['vip', 'normal', 'meia', 'cortesia']
+tipos_convite = ('vip', 'normal', 'meia', 'cortesia') # <- Tuple listas que nao podem ser mudadas, nao podem ser add e nem remover itens
+tipos_convite.append('Teste')
+tipos_convite.remove('vip')
+
+convites_com_valor = { 'vip': 60, 'norma': 40, 'meia': 30, 'cortesia': 0 }
+convites_com_valor['vip'] # <- acessar valor
+
+convites_com_valor.keys() # <- retorna somente as keys
+convites_com_valor.values() # <- retorna somente os valores das keys
