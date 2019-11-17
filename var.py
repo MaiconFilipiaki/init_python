@@ -25,3 +25,21 @@ convite = 'Maicon Douglas Filipiaki'
 # Usar print
 'Convite do ' + perfil_aspas_simples + ' com idade ' + idade
 print('Convite do %s com idade %s' % (convite, idade))
+
+
+convite1 = 'Maicon Douglas Filipiaki'
+convite2 = 'Jose'
+convite3 = 'Joao'
+
+convites = ['Maicon Douglas Filipiaki', 'Jose', 'Joao']
+
+convites[0]
+convites[1]
+convites[2]
+
+convites[0:2]
+convites[1:]
+convites.append('Vitor')
+convites.append(10)
+convites.remove(10)
+convites.remove('Vitor')
